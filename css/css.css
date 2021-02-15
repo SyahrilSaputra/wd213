@@ -182,7 +182,6 @@ grid-template-columns: repeat(2, 1fr);
     width: 90%;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
     border-radius: 10px;
-    border: 1px solid black;
     margin-right: auto;
     margin-left: auto;
 }
