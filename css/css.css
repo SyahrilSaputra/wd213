@@ -1,0 +1,451 @@
+/* Ini CSS Landing-page1 */
+
+/* variabel */
+:root{
+    --primary-text:white;
+    --text-dark:rgb(73, 62, 62);
+    --primary-color:white;
+    --blue-es:#2680EB;
+}
+body{
+    background-color:var(--primary-color);
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/* jumbotron awal */
+.jumbotron-home{
+    background-image:url(../img/Mask.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+}
+.jumbotron-home::after{
+    content:'';
+    display: block;
+    /* background-color: black; */
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.4));
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+.text-al
+{
+    color:var(--primary-text);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 7vh;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    
+}
+.text-home-1
+{
+    font-size: 15px;
+}
+.text-home-2
+{
+    font-size: 12px;
+}
+.text-home-ut
+{
+    font-size: 30px;
+}
+
+/* Spin Info Mempelai */
+.gett
+{
+    color: var(--text-dark);
+    font-size: 25px;
+    font-weight: bold;
+}
+.name
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+.lorem
+{
+    font-size: 12px;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+.together
+{
+    font-size: 10px;
+}
+
+/* Info mempelai */
+.img-place
+{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+.img-cont
+{
+    padding: 0;
+    position: relative;
+    /* width: 100%; */
+}
+.shadow-1, .shadow-2
+{
+    position: absolute;
+    width: 70%;
+}
+
+.shadow-1
+{
+    left: 0;
+    margin-left: -10%;
+}
+.shadow-2
+{
+    left: 0;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+.img-marry-1, .img-marry-2
+{
+    width: 95%;
+}
+.img-marry-1
+{
+    position: relative;
+    z-index: 1;
+    margin-top: 10%;
+}
+.img-marry-2
+{
+    position: relative;
+    z-index: 1;
+    margin-top: 20%;
+}
+.info-place
+{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.socmed
+{
+    margin:10px;
+}
+/* Galeri */
+.gallery
+{
+    background-color: #f0f0f08e;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.text-gal
+{
+    font-size: 30px;
+}
+.text-gal::after
+{
+    content:'';
+    display: block;
+    border-bottom: 5px solid rgba(38,128,235,0.1);
+    width: 160px;
+    margin-left: 10%;
+    margin-top: -15px;
+    border-radius: 20px;
+}
+.img-gallery
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.tp
+{
+    width: 75%;
+}
+
+
+/* countdown */
+.row-count
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.box-count
+{
+    width: 90%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+}
+.digit
+{
+    font-weight: bold;
+}
+.kategori
+{
+    font-size: 15px;
+}
+.save
+{
+    font-size: 20px;
+}
+/* info */
+.title
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-pri, .btn-to-maps
+{
+    margin-left: 10px;
+}
+/* maps */
+.maps-frame
+{
+    width: 100%;
+    height: 300px;
+}
+/* footer */
+.footer-im
+{
+    background-image:url(../img/Mask.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    position: relative;
+}
+.footer-im::after{
+    content:'';
+    display: block;
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.4));
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+.text-al-footer
+{
+    color:var(--primary-text);
+    /* text-transform: uppercase; */
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    
+}
+.set-height
+{
+    height: 70px;
+}
+
+/* PC */
+@media (min-width:992px){
+    /* jumbotron */
+    .jumbotron-home{
+        height: 640px;
+        background-attachment: fixed;
+    }
+    .text-home-1
+    {
+        font-size: 30px;
+    }
+    .text-home-2
+    {
+        font-size: 20px;
+    }
+    .text-home-ut
+    {
+        font-size: 50px;
+    }
+    .text-al
+    {
+        margin-top: 150px;
+    }
+    /* Info mempelai */
+    .spin
+    {
+        margin-top: 50px;
+    }
+    .gett
+    {
+        font-size: 30px;
+    }
+    .name
+    {
+        font-size: 20px;
+    }
+    .lorem 
+    {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /* galeri */
+    .text-gal
+    {
+        font-size: 45px;
+        /* background-color: rebeccapurple; */
+    }
+    .text-gal::after
+    {
+        content:'';
+        display: block;
+        border-bottom: 10px solid rgba(38,128,235,0.1);
+        width: 240px;
+        margin-top: -20px;
+        border-radius: 20px;
+    }
+    .img-gallery
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* countdown */
+    .countdown
+    {
+        margin-top: 40px;
+    }
+    .box-count
+    {
+        width: 120px;
+        height: 120px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+        
+    }
+    .digit
+    {
+        font-size: 40px;
+    }
+    .kategori
+    {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .save-place
+    {
+        width: 100%;
+    }
+    .save
+    {
+        font-size: 30px;
+        width: 68%;
+        /* background-color: red; */
+    }
+    .save::after
+    {
+        content:'';
+        display: block;
+        border-bottom: 10px solid rgba(38,128,235,0.1);
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20px;
+        border-radius: 20px;
+    }
+    /* info */
+    .mid
+    {
+        border-right: 2px solid rgba(0,0,0,0.1);
+        border-left: 2px solid rgba(0,0,0,0.1) ;
+    }
+    .wedding-info .title
+    {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    /* footer */
+    .footer-im
+    {
+        height: 250px;
+    }
+    .text-al-footer, 
+    {
+        margin-top: 150px;
+    }
+    .text-home-ut-footer
+    {
+        font-size: 40px;
+        margin-top: 120px;
+    }
+    .set-height
+    {
+        height: 120px;
+    }
+    
+}
+@media (min-width:1025px){
+    .save
+    {
+        font-size: 50px;
+        width: 70%;
+    }
+}
+
+
+
+/* Ini CSS index */
+
+.img-stable
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border:dashed 4px var(--blue-es);
+    margin-bottom: 50px;
+}
+.img-man
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.versus
+{
+    position: relative;
+    font-size: 20px;
+}
+.versus::after
+{
+    content: '';
+    display: block;
+    border-bottom: dashed 2px var(--blue-es);
+    width: 30%;
+    margin: auto;
+}
+.text-name-man, .text-name-woman
+{
+    color: var(--blue-es);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.bride
+{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+@media (min-width:992px){
+    .versus
+    {
+        font-size: 30px;
+    }
+    .versus::after
+    {
+        width: 30%;
+    }
+}
+@media (min-width:1025px){
+
+}
