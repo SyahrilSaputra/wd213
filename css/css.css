@@ -406,14 +406,17 @@ grid-template-columns: repeat(2, 1fr);
 
 
 /* Ini CSS index */
-
+.jumb-land
+{
+    margin-bottom: 0;
+}
 .img-stable
 {
     border-radius: 50%;
     width: 200px;
     height: 200px;
     border:dashed 4px var(--blue-es);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .img-man
 {
@@ -421,11 +424,19 @@ grid-template-columns: repeat(2, 1fr);
     height: 100%;
     border-radius: 50%;
 }
-
+.and
+{
+    font-size: 80px;
+    font-weight: bold;
+    /* font-family: 'Ballet', cursive; */
+    /* color: var(--blue-es); */
+}
 .versus
 {
     position: relative;
     font-size: 20px;
+    margin-top: -70px;
+    margin-bottom: 30px;
 }
 .versus::after
 {
@@ -438,7 +449,7 @@ grid-template-columns: repeat(2, 1fr);
 .text-name-man, .text-name-woman
 {
     color: var(--blue-es);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 0px;
 }
@@ -451,10 +462,19 @@ grid-template-columns: repeat(2, 1fr);
     .versus
     {
         font-size: 30px;
+        margin-top:0;
     }
     .versus::after
     {
         width: 30%;
+    }
+    .text-name-man, .text-name-woman
+    {
+        font-size: 30px;
+    }
+    .img-stable
+    {
+        margin-bottom: 40px;
     }
 }
 @media (min-width:1025px){
